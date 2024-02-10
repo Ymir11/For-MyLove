@@ -122,19 +122,3 @@ input[type="checkbox"]:checked ~ label::before
 section{
     padding: 150px 0px;
 }
-@media screen and (max-width:600px){
-    body{
-        background: url(img/Background.png)no-repeat;
-        width: 100%;
-        min-width: 10vh;
-        padding: 0;
-        margin-left: auto;
-        margin-right: auto;
-        box-sizing: border-box;
-        align-content: center;
-        font-family: 'Kaushan Script', sans-serif;
-        background-size: 600px;
-        background-position: center;
-        background-attachment: fixed; 
-    }
-}
