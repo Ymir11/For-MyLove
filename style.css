@@ -1,0 +1,130 @@
+  @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+body{
+    background-image: url(img/BackGround.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    width: 100%;
+    min-width: 10vh;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    align-content: center;
+    font-family: 'Kaushan Script', sans-serif;
+}
+.Main{
+    font-size: 50px;
+    min-height: 5em;
+}
+.MainNum1{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.LoveLetter{
+    background-color: #fbfbfb;
+    box-shadow: 0 6px 30px rgb(1, 2, 2, 14.5%);
+    border-radius: 20px;
+    width: 50em;
+    transition: 0.9s ease;
+    margin: auto;
+    padding: 15px;
+    min-height: 10em;
+}
+.description1{
+    font-family: 'Handlee';
+}
+.LoveLetter:hover{
+    transform: scale(1.010);
+}
+.MainNum2{
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+} 
+.Song{
+    background-color: #fbfbfb;
+    width: 50em;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 0 6px 30px rgb(1, 2, 2, 14.5%);
+    border-radius: 20px;
+    transition: 0.9s ease;
+}
+.description2{
+    font-family: 'Handlee';
+}
+.Song:hover{
+    transform: scale(1.010);
+}
+.card-body{
+    text-align: center;
+}
+.MainNum3{
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.Surprise{
+    background-color: #fbfbfb;
+    box-shadow: 0 6px 30px rgb(1, 2, 2, 14.5%);
+    border-radius: 20px;
+    width: 50em;
+    transition: 0.9s ease;
+    font-family: 'Handlee', sans-serif;
+    margin: auto;
+    padding: 15px;
+    min-height: 10em;
+}
+.Surprise:hover{
+    transform: scale(1.010);
+}
+.Title{
+    font-family: 'Kaushan Script', sans-serif;
+}
+.Extra{
+    display: none;
+}
+input [type="checkbox"]{
+    height: 2em;
+    display:block;
+}
+#button{
+    display: none;
+}
+label {
+    position: relative;
+    padding: 1px 1px;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #fbfbfb;
+    background-color: rgba(255, 0, 0, 0.681);
+}
+label::before {
+    content: "Show";
+}
+input[type="checkbox"]:checked ~ label::before
+{
+    content: "Hide";
+}
+.dots:has(~ input[type="checkbox"]:checked) {
+    display: none;
+}
+.Extra:has(~ input[type="checkbox"]:checked){
+    display: inline;
+}
+section{
+    padding: 150px 0px;
+}
+@media (max-width: 600px) {
+    body{
+        background-size: 1125px 2436px;
+    }
+}
