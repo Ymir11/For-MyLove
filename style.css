@@ -122,3 +122,10 @@ input[type="checkbox"]:checked ~ label::before
 section{
     padding: 150px 0px;
 }
+@media screen and (max-width:600px){
+    body{
+        background-size: 10px;
+        background-position: center;
+        background-attachment: fixed; 
+    }
+}
